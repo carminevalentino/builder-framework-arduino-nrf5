@@ -29,6 +29,7 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 
 FRAMEWORK_DIR = platform.get_package_dir("framework-arduinonordicnrf5")
+print("FRAMEWORK DIR: " + FRAMEWORK_DIR)
 assert isdir(FRAMEWORK_DIR)
 
 env.Append(
